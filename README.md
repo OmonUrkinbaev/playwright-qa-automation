@@ -1,4 +1,5 @@
 ![Playwright Tests](https://github.com/omonurkinbaev/playwright-qa-automation/actions/workflows/playwright.yml/badge.svg)
+![Playwright](https://img.shields.io/badge/Playwright-EA2845?logo=playwright&logoColor=white)
 
 # Playwright QA Automation Starter (TypeScript)
 
