@@ -1,3 +1,5 @@
+![Playwright Tests](https://github.com/<your-username>/playwright-qa-automation/actions/workflows/playwright.yml/badge.svg)
+
 # Playwright QA Automation Starter (TypeScript)
 
 Production-style **QA Automation project** built with **Playwright Test** and **TypeScript**.  
