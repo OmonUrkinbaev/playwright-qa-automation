@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test.describe("Smoke", () => {
+test.describe("Smoke @smoke", () => {
   test("home page has expected heading", async ({ page }) => {
     await page.goto("/");
     await expect(page.getByRole("heading", { name: "Welcome to the-internet" })).toBeVisible();

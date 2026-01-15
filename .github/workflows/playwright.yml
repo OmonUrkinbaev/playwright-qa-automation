@@ -2,8 +2,11 @@ name: Playwright Tests
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
+  schedule:
+    # Nightly run (cron is UTC). 07:00 UTC ≈ 02:00 Toronto (EST, winter).
+    - cron: "0 7 * * *"
 
 jobs:
   e2e:
@@ -23,8 +26,20 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run tests
-        run: npm run test:e2e
+      # PR -> fast smoke suite
+      - name: Run smoke tests (PR)
+        if: github.event_name == 'pull_request'
+        run: npm run test:smoke
+
+      # push to main -> full suite
+      - name: Run full test suite (main)
+        if: github.event_name == 'push'
+        run: npm run test:ci
+
+      # nightly -> API only (stable)
+      - name: Run API tests (nightly)
+        if: github.event_name == 'schedule'
+        run: npm run test:api
 
       - name: Upload HTML report
         if: always()

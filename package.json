@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test:e2e": "playwright test",
-    "test:e2e:ui": "playwright test --ui",
+    "test:ui": "playwright test --grep @ui",
+    "test:api": "playwright test --grep @api",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:ci": "playwright test --grep \"@ui|@api\"",
     "report": "playwright show-report"
   },
   "keywords": [],
