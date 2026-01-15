@@ -16,16 +16,27 @@ Demonstrates modern UI and API testing practices, Page Object Model, data-driven
 
 ## 📁 Project Structure
 playwright-qa-starter/
+
 ├─ .github/workflows/
+
 │ └─ playwright.yml # CI pipelines (PR, main, nightly)
+
 ├─ pages/
+
 │ └─ LoginPage.ts # Page Object Model
+
 ├─ tests/
+
 │ ├─ auth.spec.ts # UI E2E tests (data-driven login)
+
 │ ├─ smoke.spec.ts # Smoke tests
+
 │ └─ api.spec.ts # API contract tests
+
 ├─ playwright.config.ts
+
 ├─ package.json
+
 └─ README.md
 
 
