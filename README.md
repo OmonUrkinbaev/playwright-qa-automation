@@ -65,7 +65,7 @@ playwright-qa-starter/
 
 ---
 
-## 🏷 Test Tags
+## Test Tags
 Tests are grouped using tags to support selective execution:
 
 - `@smoke` — fast smoke tests  
