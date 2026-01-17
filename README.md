@@ -8,7 +8,7 @@ Demonstrates modern UI and API testing practices, Page Object Model, data-driven
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 - **Playwright Test**
 - **TypeScript / JavaScript**
 - **Node.js**
@@ -17,7 +17,7 @@ Demonstrates modern UI and API testing practices, Page Object Model, data-driven
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 playwright-qa-starter/
 
 ├─ .github/workflows/
@@ -45,7 +45,7 @@ playwright-qa-starter/
 
 ---
 
-## ✅ Test Coverage
+## Test Coverage
 
 ### UI Automation (E2E)
 - Login flow with **valid and invalid credentials**
@@ -79,7 +79,7 @@ Tests are grouped using tags to support selective execution:
 - npm run test:ui
 - npm run test:api
 
-▶️ Run Tests Locally
+Run Tests Locally
 - Install dependencies
 - npm ci
 - npx playwright install
@@ -90,7 +90,7 @@ Run all tests
 Open HTML report
 - npm run report
 
-🧯 Flaky Test Handling
+Flaky Test Handling
 
 This project applies common anti-flaky practices used in production environments:
 - Retries (local and CI)
@@ -99,7 +99,7 @@ This project applies common anti-flaky practices used in production environments
 - Stable locators (getByRole, deterministic selectors)
 - Timing-sensitive assertions handled with expect.poll(...)
 
-🧪 CI Strategy
+CI Strategy
 
 - CI pipelines are implemented using GitHub Actions:
 
@@ -114,7 +114,7 @@ Nightly:
 
 All CI runs generate HTML reports and store artifacts for debugging.
 
-🎯 Why This Project
+Why This Project
 
 This repository demonstrates:
 
@@ -126,7 +126,7 @@ This repository demonstrates:
 
 Designed to reflect expectations for QA Automation Engineer / SDET roles.
 
-📌 Author
+ Author
 Omon Urkinbaev
 QA Automation Engineer
 Toronto, Canada
